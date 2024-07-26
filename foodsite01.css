@@ -39,8 +39,9 @@ nav ul li{
 }
 section{
     padding: 70px 17%;
+    background-color: aqua;
 }
-.section01{
+.home{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
@@ -48,14 +49,17 @@ section{
     align-items: center;
     grid-gap: 1.5rem;
     
+    
 }
 
-.section01 .sec01text{
+.home .sec01text{
     background-color: #1e1c2a;
 }
 
-section .sec01img img{
-    
-    
+.sec01img img{
+    max-width: 100%;
+    width: 90vw;
     height: auto;
+    background-color: blueviolet;
+    
 }
