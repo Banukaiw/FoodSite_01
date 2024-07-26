@@ -51,6 +51,16 @@ section{
     
     
 }
+.home{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    min-height: 90vh;  
+    align-items: center;
+    grid-gap: 1.5rem;
+    
+    
+}
 
 .home .sec01text{
     background-color: #1e1c2a;
