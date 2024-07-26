@@ -2,16 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #1e1c2a;
+    color: whitesmoke;
 }
 
 .logo{
     color: orange;
 }
+body{
+    background-color: #1e1c2a;
+}
 nav{
     top: 0;
     right: 0;
-    position: fixed;
+    position: relative;
     width: 100%;
     display: flex;
     padding: 20px 170px;
@@ -33,4 +36,26 @@ nav ul li{
 
 #menu-icon{
     display: none;
+}
+section{
+    padding: 70px 17%;
+}
+.section01{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    min-height: 90vh;  
+    align-items: center;
+    grid-gap: 1.5rem;
+    
+}
+
+.section01 .sec01text{
+    background-color: #1e1c2a;
+}
+
+section .sec01img img{
+    
+    
+    height: auto;
 }
