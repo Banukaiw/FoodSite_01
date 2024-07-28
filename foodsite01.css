@@ -178,13 +178,24 @@ section{
     line-height: 1.7;
 }
 
-.heading{
+.menu{
+    margin-top: 5%;
+}
+
+.menu .heading{
     text-align: center;
 }
-.heading span{
+.menu .heading p{
     color: orangered;
+    font-size: 1.6rem;
     font-weight: 600;
 }
+.menu .heading h1{
+
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+
 
 .menu-container{
     display: grid;
@@ -206,8 +217,11 @@ section{
     background: #feeee7;
     padding: 25px;
     border-radius: 0.5rem;
+    cursor: pointer;
     
 }
+
+
 
 .menu-container .box .box-img{
     width: 220px;
@@ -235,6 +249,60 @@ section{
 .menu-container .box span{
     color: orangered;
 }
+
+.menu-container .box i{
+    position: absolute;
+    color: orangered;
+    top: 0;
+    right: 0;
+    font-size: 1.3rem;
+    margin: 3% 3% 0% 0%;
+    cursor: pointer;
+}
+
+.menu-container .box i:hover{
+    color: black;
+    transform: scale(1.1);
+}
+
+.Service{
+    align-items: center;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.Service .servicebox{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px, auto));
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+    gap: 1.5rem;
+}
+
+.Service .servicebox .cart{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+    padding: 5%;
+}
+
+.Service .servicebox .cart .cartimg{
+    width: 100px;
+    height: 100px;
+}
+
+.Service .servicebox .cart .cartimg img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
 
 
 @media only screen and (max-width:850px){
