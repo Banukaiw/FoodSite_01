@@ -6,7 +6,9 @@
 }
 
 .logo{
-    color: orange;
+    color: orangered;
+    font-size: 3rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 body{
     background-color: #1e1c2a;
@@ -17,7 +19,7 @@ nav{
     position: relative;
     width: 100%;
     display: flex;
-    padding: 20px 170px;
+    padding: 20px 15%;
     justify-content: space-between;
     align-items: center;
     background-color: #1e1c2a;
@@ -31,45 +33,304 @@ nav ul{
 }
 
 nav ul li{
+    font-size: 1.3rem;
     padding-right: 5%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+
+}
+
+nav ul li:hover{
+    color: orangered;
+    transition: 0.8s;
+    text-decoration: underline;
 }
 
 #menu-icon{
     display: none;
 }
+
+
 section{
-    padding: 70px 17%;
-    background-color: aqua;
-}
-.home{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 100%;
-    min-height: 90vh;  
-    align-items: center;
-    grid-gap: 1.5rem;
-    
-    
-}
-.home{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 100%;
-    min-height: 90vh;  
-    align-items: center;
-    grid-gap: 1.5rem;
-    
+   padding: 1% 17%;
     
 }
 
-.home .sec01text{
-    background-color: #1e1c2a;
+.sec01{
+    width: 100%;
+    display: flex;
+    min-height: 90vh;
+    align-items: center;
+    gap: 10%;
+   
 }
+
 
 .sec01img img{
     max-width: 100%;
-    width: 90vw;
+    width: 600px;
     height: auto;
-    background-color: blueviolet;
+}
+.sec01text h1{
+    font-size: 5rem;
+    color: orangered;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.sec01text h2{
+    font-size: 2.25rem;
+    color: whitesmoke;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.sec01text p{
+    font-size: 0.9rem;
+
+}
+
+.sec01text .btn1{
+    background-color: orangered;
+    border: none;
+    font-size: 1rem;
+    padding: 2%;
+    border-radius: 6px;
+    margin-top: 6%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    
+}
+
+.sec01text .btn1:hover{
+    transition: 0.3s;
+    transform: scale(1.1);
+    
+}
+
+.content2{
+    
+    display: flex;
+    gap: 5%;
+    align-items: center;
+
+}
+
+.sec02img img{
+    max-width: 100%;
+    width: 600px;
+    margin-top: 9%;
+    background-color: blue;
+}
+.sec02text{
+    background-color: blue;
+}
+.sec02text .btn1{
+    background-color: orangered;
+    border: none;
+    font-size: 1rem;
+    padding: 2%;
+    border-radius: 6px;
+    margin-top: 6%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+}
+
+.sec02text .btn1:hover{
+    transition: .3s;
+    transform: scale(1.1);
+}
+
+.sec02text h3{
+    margin-bottom: 2%;
+    color: orangered;
+}
+
+.sec02text h1{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    grid-gap: 1.5rem;
+    align-items: center;
+    
+}
+
+.about-img img{
+    max-width: 100%;
+    width: 480px;
+    height: auto;
+}
+.about-text span{
+    color: orangered;
+    font-weight: 600;
+}
+
+.about-text h2{
+    font-size: 2.25rem;
+}
+
+.about-text p{
+    margin: 0.8rem 0 1.8rem;
+    line-height: 1.7;
+}
+
+.menu{
+    margin-top: 5%;
+}
+
+.menu .heading{
+    text-align: center;
+}
+.menu .heading p{
+    color: orangered;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.menu .heading h1{
+
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+
+
+.menu-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px, auto));
+    grid-gap: 1.5rem;
+    align-items: center;
+    margin-top: 2%;
+    
+}
+.menu-container .box{
+    position: relative;
+    margin-left: 2%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-items: center;
+    justify-content: center;
+    background: #feeee7;
+    padding: 25px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    
+}
+
+
+
+.menu-container .box .box-img{
+    width: 220px;
+    height: 220px;
+    
+}
+
+.menu-container .box .box-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.menu-container .box h2{
+    font-size: 1.2rem;
+    color: black;
+}
+
+.menu-container .box h3{
+    color: black;
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 4px 0 10px;
+}
+
+.menu-container .box span{
+    color: orangered;
+}
+
+.menu-container .box i{
+    position: absolute;
+    color: orangered;
+    top: 0;
+    right: 0;
+    font-size: 1.3rem;
+    margin: 3% 3% 0% 0%;
+    cursor: pointer;
+}
+
+.menu-container .box i:hover{
+    color: black;
+    transform: scale(1.1);
+}
+
+.Service{
+    align-items: center;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.Service .servicebox{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px, auto));
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+    gap: 1.5rem;
+}
+
+.Service .servicebox .cart{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+    padding: 5%;
+}
+
+.Service .servicebox .cart .cartimg{
+    width: 100px;
+    height: 100px;
+}
+
+.Service .servicebox .cart .cartimg img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+@media only screen and (max-width:850px){
+    .sec01{
+        flex-direction: column;
+    }
+
+    .sec01img{
+        margin-top: 12%;
+    }
+
+    .logo{
+        right: 0;;
+    }
+
+    .sec01text{
+       margin-top: 10%;
+        text-align: center;
+    }
+
+    .sec01img img{
+        width: 450px;
+    }
+
+    .content2{
+        margin-top: 10%;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
     
 }
