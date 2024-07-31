@@ -22,7 +22,7 @@ nav{
     padding: 1% 10%;
     justify-content: space-between;
     align-items: center;
-    background-color: #1e1c2a;
+    background-color: #070707;
     color: aliceblue;
 }
 
@@ -48,6 +48,8 @@ nav ul li:hover{
 }
 
  #menu-icon{
+    font-size: 2rem;
+    cursor: pointer;
     display: none;
     
 } 
@@ -59,11 +61,15 @@ section{
 }
 
 .sec01{
+    margin-top: 2%;
     width: 100%;
     display: flex;
     min-height: 90vh;
     align-items: center;
     gap: 10%;
+    padding: 1% 8% 1% 8%;
+    border-radius: 38px;
+    background-color: #000000;
    
 }
 
@@ -157,6 +163,7 @@ section{
     display: grid;
     grid-template-columns: repeat(2,2fr);
     grid-gap: 1.5rem;
+    margin-top: 7%;
     align-items: center;
     
 }
@@ -169,6 +176,7 @@ section{
 .about-text span{
     color: orangered;
     font-weight: 600;
+    font-size: 1.7rem;
 }
 
 .about-text h2{
@@ -178,6 +186,17 @@ section{
 .about-text p{
     margin: 0.8rem 0 1.8rem;
     line-height: 1.7;
+}
+
+.about-text .btn1{
+    background-color: orangered;
+    border: none;
+    font-size: 1rem;
+    padding: 2%;
+    border-radius: 6px;
+    margin-bottom: 14%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
 }
 
 .menu{
@@ -359,7 +378,6 @@ footer section .footerlinks div h3::before{
     position: absolute;
     height: 2px;
     width: 50px;
-    
     bottom: -8px;
     background-color: orangered;
 }
@@ -372,7 +390,7 @@ footer section .footerlinks div ul li{
 
 footer section .footerlinks div .socialicon i{
     color: orangered;
-    
+
     margin: 4px;
     font-size: 1.5rem;
 }
@@ -391,6 +409,15 @@ footer section .footerlinks div .socialicon i{
 
     .logo{
         right: 0;;
+    }
+
+    .about{
+       margin-top: 8%;
+       display: flex;
+       flex-direction: column-reverse;
+       align-items: center;
+       text-align: center;
+       margin-bottom: 5%;
     }
 
     .sec01text{
@@ -414,12 +441,13 @@ footer section .footerlinks div .socialicon i{
 
     
     #menu-icon{
-        display: block;
+        display: initial;
+        color: orangered;
     }
 
     nav .navbar{
         position: absolute;
-        top: 0px;
+        top: -400px;
         left: 0;
         right: 0;
         display: flex;
@@ -427,6 +455,20 @@ footer section .footerlinks div .socialicon i{
         text-align: center;
         background-color: #2b2640;
         transition: .3s;
+    }
+
+    nav .navbar .active{
+       top: 70px; 
+    }
+
+    nav .navbar a{
+        padding: 1.5rem;
+        display: block;
+    }
+
+    footer section .footerlinks div h3::before{
+       align-items: center;
+       
     }
 
     
